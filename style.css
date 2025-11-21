@@ -244,11 +244,10 @@ body {
   width: 100%;
   padding: 10px 12px 10px 32px;
   border-radius: 9px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #f0f1f1;
   font-size: 14px;
-  
   outline: none;
-  background: #e5e7eb;
+  background: #f0f1f1;
 }
 
 .search-wrapper input::placeholder {
