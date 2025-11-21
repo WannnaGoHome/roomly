@@ -256,16 +256,18 @@ body {
 
 .search-icon {
   position: absolute;
-  left: 12px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  background-image: url("search.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  font-size: 14px;
 }
+
+.search-icon img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
 
 /* Карточка занятия */
 
