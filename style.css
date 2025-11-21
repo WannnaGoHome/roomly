@@ -127,7 +127,7 @@ body {
   align-items: center;
   justify-content: space-between;
   
-  padding: 20px 130px;
+  padding: 20px 100px;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -172,7 +172,7 @@ body {
 
 .switch-role-btn {
   border-radius: 8px;
-  font-weight: 550;
+  font-weight: 510;
   padding: 8px 18px;
   border: 1px solid #e5e7eb;
   background: #ffffff;
