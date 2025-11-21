@@ -264,6 +264,13 @@ body {
   font-size: 14px;
 }
 
+.user-icon {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
 .search-icon img {
   width: 16px;
   height: 16px;
