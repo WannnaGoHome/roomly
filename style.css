@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 32px 40px;
 }
@@ -123,18 +123,26 @@ body {
 
 .app-header {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  padding: 20px 100px;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-
-  position: sticky; /* красиво остаётся при scroll */
+  position: sticky; 
+  display: flex;
   top: 0;
   z-index: 100;
+
+  /* align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px; */
+}
+
+.app-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .app-header-left {
