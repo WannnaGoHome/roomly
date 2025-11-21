@@ -244,7 +244,8 @@ body {
   width: 100%;
   padding: 10px 12px 10px 32px;
   border-radius: 9px;
-  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
   outline: none;
   background: #e5e7eb;
 }
@@ -255,11 +256,15 @@ body {
 
 .search-icon {
   position: absolute;
-  left: 10px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 14px;
-  color: #9ca3af;
+  width: 18px;
+  height: 18px;
+  background-image: url("search.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Карточка занятия */
