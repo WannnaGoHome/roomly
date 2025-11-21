@@ -264,7 +264,7 @@ body {
   font-size: 14px;
 }
 
-.user-icon {
+.user-icon img {
   width: 16px;
   height: 16px;
   object-fit: contain;
