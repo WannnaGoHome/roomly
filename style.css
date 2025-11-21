@@ -213,7 +213,7 @@ body {
   border-radius: 999px;
   background: #f0f1f5;
   margin-bottom: 16px;
-  font-weight: 600;
+  
 }
 
 .tab {
@@ -224,13 +224,14 @@ body {
   font-size: 14px;
   cursor: pointer;
   color: #555;
+  font-weight: 600;
 }
 
 .tab.active {
   background: #ffffff;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
   color: #111827;
-  
+  font-weight: 600;
 }
 
 /* Поиск */
@@ -264,17 +265,12 @@ body {
   font-size: 14px;
 }
 
-.user-icon img {
+.basic-icon img {
   width: 16px;
   height: 16px;
   object-fit: contain;
   margin-bottom: -3px;
 }
-
-/* .location-icon img {
-  object-fit: contain;
-  margin-bottom: -3px; 
-} */
 
 .search-icon img {
   width: 16px;
@@ -286,11 +282,11 @@ body {
 /* Карточка занятия */
 
 .class-card {
-  margin-top: 8px;
+  margin: 8px 0px 15px 0px;
   background: #ffffff;
   border-radius: 16px;
-  padding: 16px 20px;
-  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -313,7 +309,7 @@ body {
 .chip-time {
   padding: 4px 10px;
   border-radius: 999px;
-  background: #f3f4ff;
+  background: #eceef2;
   color: #111827;
   font-size: 12px;
   font-weight: 500;
@@ -323,9 +319,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  font-size: 13px;
+  font-size: 15px;
   color: #767487;
-  margin-top: 4px;
+  margin: 8px 0px 20px 0px;
 }
 
 .meta-item {
@@ -338,7 +334,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  font-size: 13px;
+  font-size: 14px;
   color: #4b5563;
   margin-top: 4px;
 }
