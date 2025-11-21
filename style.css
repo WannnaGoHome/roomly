@@ -246,12 +246,14 @@ body {
   border-radius: 9px;
   border: 1px solid #e5e7eb;
   font-size: 14px;
+  
   outline: none;
   background: #e5e7eb;
 }
 
 .search-wrapper input::placeholder {
-  color: #9ca3af;
+  color: #7B7B7B;
+  font-weight: 500;
 }
 
 .search-icon {
