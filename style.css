@@ -147,7 +147,7 @@ body {
   justify-content: center;
 }
 
-#app-header-img {
+.app-header-svg {
   width: 24px;
   height: 24px;
 }
