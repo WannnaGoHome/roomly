@@ -265,10 +265,9 @@ body {
 }
 
 .user-icon {
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .search-icon img {
