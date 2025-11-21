@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Roomly</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- 1) select role -->
+      <div id="state-select-role" class="state select-role">
+        <div class="container">
+          <h1>University Room Reservation System</h1>
+          <p>Select your role to continue</p>
+          <form id="select-role-form">
+            <div class="role-button">
+              <img alt="home" class="select-role-img">
+              <p class="select-role-title">Student</p>
+              <p class="select-role-description">View class schedules and available rooms</p>
+            </div>
+            <div class="role-button">
+              <img alt="people" class="select-role-img">
+              <p class="select-role-title">Club</p>
+              <p class="select-role-description">Reserve rooms and manage activities</p>
+            </div>
+            <div class="role-button">
+              <img alt="security" class="select-role-img">
+              <p class="select-role-title">Administration</p>
+              <p class="select-role-description">Monitor and manage all reservations</p>
+            </div>
+          </form>
+        </div> 
+      </div>
+
+      <!-- 2) student portal -->
+      <div id="state-student-portal" class="state hidden">
+        <div class="container">
+          <div class="app-header">
+            <img alt="building" id="app-header-img"/>
+            <p class="app-header-title">Student Portal</p>
+            <p class="app-header-description">Room Reservation System</p>
+            <button>Switch Role</button>
+          </div>
+
+          <div class="app-main">
+            <h2 class="portal-title">Student Portal</h2>
+            <p class="portal-description">View class schedules and find available rooms</p>
+            
+            <div class="student-tabs">
+              <button class="tab active">Class Schedule</button>
+              <button class="tab">Available Rooms</button>
+            </div>
+            
+            <div class="search-wrapper">
+              <span class="search-icon">🔍</span>
+              <input
+                type="text"
+                placeholder="Search classes, professors, or rooms..."/>
+            </div>
+            
+            <article class="class-cards">
+              <header class="card-header">
+                <div>
+                  <div class="title">Introduction to Computer Science</div>
+                  <div class="meta-row">
+                    <span class="meta-item">
+                      <span>👤</span>
+                      <span>Prof. Smith</span>
+                    </span>
+                    <span class="meta-item">
+                      <span>📍</span>
+                      <span>Room A101 (Building A)</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="chip-time">
+                  09:00 - 10:30
+                </div>
+              </header>
+              <div class="footer-row">
+                <span class="meta-item">
+                  <span>👥</span>
+                  <span>28 / 30 students</span>
+                </span>
+                <span class="muted">Type: lecture</span>
+                <span class="muted">Equipment: Projector, Whiteboard</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3) club portal -->
+
+      <!-- 4) administration portal -->
+
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
