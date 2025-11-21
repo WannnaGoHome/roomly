@@ -248,11 +248,12 @@ body {
   font-size: 14px;
   outline: none;
   background: #f3f3f5;
+  font-weight: 300;
 }
 
 .search-wrapper input::placeholder {
   color: #767487;
-  font-weight: 300;
+  
 }
 
 .search-icon {
