@@ -126,11 +126,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
-  padding: 20px 40px;
+  
+  padding: 20px 100px;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  position: sticky; /* красиво остаётся при scroll */
+  top: 0;
+  z-index: 100;
 }
 
 .app-header-left {
