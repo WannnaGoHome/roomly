@@ -268,7 +268,13 @@ body {
   width: 16px;
   height: 16px;
   object-fit: contain;
+  margin-bottom: -3px;
 }
+
+/* .location-icon img {
+  object-fit: contain;
+  margin-bottom: -3px; 
+} */
 
 .search-icon img {
   width: 16px;
