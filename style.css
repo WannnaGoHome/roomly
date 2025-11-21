@@ -252,7 +252,7 @@ body {
 
 .search-wrapper input::placeholder {
   color: #7B7B7B;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .search-icon {
