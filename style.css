@@ -387,7 +387,7 @@ body {
 
 .room-card {
   background: #ffffff;
-  padding: 20px;
+  padding: 20px 24px;
   border-radius: 16px;
   border: 1px solid #e5e7eb;
 }
@@ -401,20 +401,25 @@ body {
 
 .room-card-title {
   font-size: 16px;
+  font-weight: 600;
+  color: #111827;
   margin: 0;
 }
 
 .room-tag {
-  background: #f2f3f8;
-  padding: 4px 10px;
+  background: #f3f4ff;
+  color: #111827;
+  padding: 4px 12px;
   border-radius: 12px;
   font-size: 12px;
+  font-weight: 500;
 }
 
-.room-building,
+.room-floor,
 .room-seats {
-  color: #4b5563;
-  margin: 4px 0;
+  color: #6b7280;
+  font-size: 14px;
+  margin: 6px 0;
 }
 
 .room-equipment {
@@ -425,8 +430,12 @@ body {
 }
 
 .eq-tag {
-  background: #f2f3f8;
-  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3f4ff;
+  padding: 4px 12px;
   border-radius: 12px;
   font-size: 13px;
+  color: #111827;
 }
