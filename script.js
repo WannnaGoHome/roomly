@@ -1,21 +1,27 @@
 const stateSelectRole = document.getElementById('state-select-role');
-const stateStudentPortal = document.getElementById('state-student-portal');
-const studentRoleButton = document.querySelector('.role-button[data-role="student"]');
+const portals = document.querySelectorAll('.portal');
+const roleButtons = document.querySelector('.role-button[data-role]');
 const switchRoleBtn = document.querySelector('.switch-role-btn');
 
-function showStudentPortal() {
-stateSelectRole.classList.add('hidden');
-stateStudentPortal.classList.remove('hidden');
+function hideAllPortals() {
+  portals.forEach((portal) => portal.classList.add('hidden'));
 }
 
 function showSelectRole() {
-stateStudentPortal.classList.add('hidden');
-stateSelectRole.classList.remove('hidden');
+  hideAllPortals();
+  stateSelectRole.classList.remove('hidden');
 }
 
-if (studentRoleButton) {
-studentRoleButton.addEventListener('click', showStudentPortal);
-}
+roleButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const role = btn.dataset.role;
+    stateSelectRole.classList.add('hidden');
+    hideAllPortals();
+
+    const portal = document.querySelector(`.portal[data-portal="${role}"]`);
+    if (portal) portal.classList.remove('hidden');
+  });
+});
 
 if (switchRoleBtn) {
 switchRoleBtn.addEventListener('click', showSelectRole);
