@@ -14,8 +14,8 @@ body {
   min-height: 100vh;
 }
 
-.state.hidden {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 .container {
@@ -344,9 +344,7 @@ body {
 }
 
 /* TAB CONTENT */
-.tab-content.hidden {
-  display: none;
-}
+
 
 /* Header card for Available Rooms */
 .rooms-header-card {
