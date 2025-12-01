@@ -1,6 +1,6 @@
 const stateSelectRole = document.getElementById('state-select-role');
 const portals = document.querySelectorAll('.portal');
-const roleButtons = document.querySelector('.role-button[data-role]');
+const roleButtons = document.querySelectorAll('.role-button[data-role]');
 const switchRoleBtn = document.querySelector('.switch-role-btn');
 
 function hideAllPortals() {
