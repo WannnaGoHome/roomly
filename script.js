@@ -2,6 +2,12 @@ const stateSelectRole = document.getElementById('state-select-role');
 const portals = document.querySelectorAll('.portal');
 const roleButtons = document.querySelectorAll('.role-button[data-role]');
 const switchRoleBtns = document.querySelectorAll('.switch-role-btn');
+const modal = document.getElementById("reservation-modal");
+const overlay = document.getElementById("modal-overlay");
+document.getElementById("open-modal").onclick = openModal;
+document.getElementById("modal-close").onclick = closeModal;
+document.getElementById("modal-cancel").onclick = closeModal;
+overlay.onclick = closeModal;
 
 function hideAllPortals() {
   portals.forEach((portal) => portal.classList.add('hidden'));
@@ -46,4 +52,14 @@ if (tabButtons.length > 0) {
       }
     });
   });
+}
+
+function openModal() {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
+function closeModal() {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
 }
