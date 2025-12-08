@@ -6,7 +6,6 @@ const switchRoleBtns = document.querySelectorAll('.switch-role-btn');
 
 const modal = document.getElementById("reservation-modal");
 const overlay = document.getElementById("modal-overlay");
-const openModalTrigger = document.getElementById("open-modal");
 const newReservationBtns = document.querySelectorAll('.new-reservation-btn');
 
 // --------- basic role switching (unchanged) ----------
