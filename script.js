@@ -7,7 +7,7 @@ const switchRoleBtns = document.querySelectorAll('.switch-role-btn');
 const modal = document.getElementById("reservation-modal");
 const overlay = document.getElementById("modal-overlay");
 const openModalTrigger = document.getElementById("open-modal");
-const newReservationBtns = document.querySelectorAll('.new-reservation-btn');
+const newReservationBtns = document.querySelectorAll('.reserve-room-btn');
 
 // --------- basic role switching (unchanged) ----------
 function hideAllPortals() {
@@ -101,7 +101,7 @@ function closeModal() {
   if (overlay) overlay.classList.add('hidden');
 }
 if (openModalTrigger) openModalTrigger.addEventListener('click', openModal);
-// open from any New Reservation button
+
 newReservationBtns.forEach(b => b.addEventListener('click', openModal));
 
 const modalCloseBtn = document.getElementById("modal-close");
